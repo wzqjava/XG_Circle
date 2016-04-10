@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xg.circle.activity.CircleSendActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tvBack"
+            style="@style/text_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/back" />
+
+        <TextView
+            style="@style/text_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="发送朋友圈" />
+
+        <TextView
+            android:id="@+id/tvCircleSend"
+            style="@style/text_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="发送" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/etCases"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_top_height"
+        android:background="@color/colorWhite"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="发朋友圈..."
+        android:inputType="textMultiLine"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/text_size_eighteen" />
+
+    <GridView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:horizontalSpacing="@dimen/common_size_line"
+        android:numColumns="4"
+        android:padding="@dimen/common_size_line"
+        android:verticalSpacing="@dimen/common_size_line" />
+
+    <View
+        style="@style/line_horizontal_gray"/>
+</LinearLayout>

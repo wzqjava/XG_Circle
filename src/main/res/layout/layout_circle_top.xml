@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/vCircleTop"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/colorButtonBlue" />
+
+    <TextView
+        android:id="@+id/tvcircleUserName"
+        style="@style/text_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/vCircleTop"
+        android:layout_gravity="bottom"
+        android:layout_toLeftOf="@+id/imgCircleUserIcon"
+        android:padding="@dimen/common_size_ten"/>
+
+    <ImageView
+        android:id="@+id/imgCircleUserIcon"
+        android:layout_width="@dimen/common_size_seventy"
+        android:layout_height="@dimen/common_size_seventy"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/vCircleTop"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="-50dp"/>
+</RelativeLayout>

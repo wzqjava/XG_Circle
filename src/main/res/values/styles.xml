@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="selector_white_gray">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/select_white</item>
+    </style>
+
+    <style name="text_white">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/text_size_eighteen</item>
+    </style>
+
+
+    <style name="popupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@animator/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@animator/push_buttom_out</item>
+    </style>
+
+    <style name="line_vertical_gray">
+        <item name="android:layout_width">@dimen/common_size_line</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/grayLine</item>
+    </style>
+
+    <style name="line_horizontal_gray">
+        <item name="android:layout_height">@dimen/common_size_line</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/grayLine</item>
+    </style>
+
+    <style name="circle_pop_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@animator/pop_circle_enter</item>
+        <item name="android:windowExitAnimation">@animator/pop_circle_exit</item>
+    </style>
+
+    <style name="frg_item_textview" parent="selector_white_gray">
+        <item name="android:padding">@dimen/activity_horizontal_margin</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_eighteen</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:drawablePadding">@dimen/common_size_ten</item>
+    </style>
+
+</resources>

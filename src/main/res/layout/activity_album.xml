@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xg.circle.activity.AlbumActivity">
+
+    <RelativeLayout
+        android:id="@+id/relAlbumTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tvBack"
+            style="@style/text_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/back" />
+
+        <TextView
+            style="@style/text_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/title_album" />
+
+        <TextView
+            android:id="@+id/tvCheckPhoto"
+            style="@style/text_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/checkPhoto" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relAlbumTitle"
+        android:horizontalSpacing="@dimen/common_size_line"
+        android:numColumns="3"
+        android:padding="@dimen/common_size_line"
+        android:verticalSpacing="@dimen/common_size_line" />
+
+    <RelativeLayout
+        android:id="@+id/relAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ee000000">
+
+        <TextView
+            android:id="@+id/tvAlbumFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_eighteen" />
+
+        <TextView
+            android:id="@+id/tvPhotoNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_eighteen" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

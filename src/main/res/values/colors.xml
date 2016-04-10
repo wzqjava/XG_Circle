@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGreenDeep">#007140</color>
+    <color name="colorBlack">#000000</color>
+    <color name="grayLine">#d7d7d9</color>
+    <color name="grayBg">#f0eff4</color>
+    <color name="grayLight">#bcbcbc</color>
+    <!--浅灰色 -->
+    <color name="transparent">#00000000</color>
+    <color name="colorMainBlue">#1bcdd7</color>
+    <color name="colorMainBlueDeep">#19bcc5</color>
+    <color name="colorOrange">#ff7403</color>
+    <color name="colorOrangeDeep">#e36804</color>
+    <color name="colorIndianRed3">#CD5555</color>
+
+    <color name="colorButtonBlue">#55b5e5</color>
+    <color name="colorButtonBlueDeep">#4695bd</color>
+</resources>
